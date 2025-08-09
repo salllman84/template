@@ -1,7 +1,7 @@
 </main>
 <footer class="site-footer" role="contentinfo">
   <div class="container">
-    <div>© <?php echo date('Y'); ?> <?php bloginfo('name'); ?> — <?php bloginfo('description'); ?></div>
+    <div>© <?php echo date('Y'); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?> — <?php echo esc_html( get_bloginfo( 'description' ) ); ?></div>
     <?php if (is_active_sidebar('footer-1')): ?><div class="widget-area"><?php dynamic_sidebar('footer-1'); ?></div><?php endif; ?>
   </div>
 </footer>
