@@ -14,9 +14,11 @@ Text Domain: minimal-gstyle
 }
 *{box-sizing:border-box}html,body{height:100%}html{scroll-padding-top:90px}
 body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+.skip-link{position:absolute;top:-40px;left:0;background:var(--accent);color:#fff;padding:8px 14px;z-index:1000;text-decoration:none;border-radius:0 0 var(--round) 0}
+.skip-link:focus{top:0}
 body::before{content:"";position:fixed;inset:-40%;z-index:-1;background:
-radial-gradient(40% 40% at 10% 10%, rgba(122,211,33,.18), transparent 65%),
-radial-gradient(30% 30% at 92% 8%, rgba(255,45,141,.12), transparent 60%);
+  radial-gradient(40% 40% at 10% 10%, rgba(122,211,33,.18), transparent 65%),
+  radial-gradient(30% 30% at 92% 8%, rgba(255,45,141,.12), transparent 60%);
 filter:blur(44px)}
 .container{max-width:var(--maxw);margin:0 auto;padding:18px}
 .site-header{position:sticky;top:0;background:rgba(255,255,255,.70);backdrop-filter:saturate(120%) blur(var(--blur));border-bottom:1px solid var(--border);z-index:1000}
