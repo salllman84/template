@@ -6,6 +6,8 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<a class="skip-link" href="#content">Skip to content</a>
 <div class="progress" id="progress"></div>
 <header class="site-header" role="banner">
   <div class="container header-inner">
