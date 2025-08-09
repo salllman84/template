@@ -1,7 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-  <meta charset="<?php bloginfo('charset'); ?>" />
+  <meta charset="<?php echo esc_html( get_bloginfo( 'charset' ) ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <?php wp_head(); ?>
 </head>
@@ -11,7 +11,7 @@
   <div class="container header-inner">
     <a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
       <?php if (function_exists('the_custom_logo') && has_custom_logo()) { the_custom_logo(); } ?>
-      <span><?php bloginfo('name'); ?></span>
+      <span><?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
     </a>
     <nav class="primary-nav" aria-label="<?php esc_attr_e('Primary Menu','minimal-gstyle'); ?>">
       <?php wp_nav_menu([ 'theme_location' => 'primary', 'menu_class' => 'menu', 'container' => false ]); ?>
