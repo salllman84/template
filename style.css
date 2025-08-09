@@ -33,6 +33,7 @@ filter:blur(44px)}
 .hamb{display:none;justify-self:end}.hamb button{border:1px solid var(--border);background:#fff;border-radius:14px;padding:10px;cursor:pointer;box-shadow:var(--shadow1)}
 .mobile-panel{position:fixed;left:0;right:0;top:66px;background:rgba(255,255,255,.72);backdrop-filter:blur(var(--blur));border-bottom:1px solid var(--border);box-shadow:var(--shadow2);display:none;z-index:1200}
 .mobile-panel .inner{max-width:var(--maxw);margin:0 auto;padding:14px 20px;display:flex;flex-direction:column;gap:10px}
+.menu-overlay{position:fixed;inset:0;background:rgba(15,23,32,.45);display:none;z-index:1150}
 @media (max-width:899px){.header-inner{grid-template-columns:1fr auto auto}.primary-nav{display:none}.searchbar{grid-column:1/-1;justify-self:stretch}.hamb{display:flex}}
 .suggest{position:relative}.suggest-list{position:absolute;top:46px;left:0;right:0;background:rgba(255,255,255,.92);backdrop-filter:blur(var(--blur));border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow2);overflow:hidden}
 .suggest-item{display:block;padding:10px 14px;text-decoration:none;color:var(--text)}.suggest-item:hover{background:rgba(15,23,32,.06)}

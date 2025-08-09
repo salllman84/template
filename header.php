@@ -29,5 +29,6 @@
       <?php get_search_form(); ?>
     </div>
   </div>
+  <div id="menuOverlay" class="menu-overlay" hidden></div>
 </header>
 <main id="content" class="container" role="main">
