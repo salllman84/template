@@ -1,0 +1,1 @@
+<?php get_header(); ?><section class="hero"><div class="logo">404</div><p class="meta">Sorry, that page could not be found.</p><p><a class="btn btn-cta" href="<?php echo esc_url(home_url('/')); ?>">Back to Home</a></p></section><?php get_footer(); ?>
